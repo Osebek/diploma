@@ -1,0 +1,26 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/obrazi17/Eakins_Elder_1883_003.jpg: YAW00  yaw   0 rot  -6 
+00000000 Eakins_Elder_1883_003
+{ 17 2
+217 106
+256 108
+220 147
+253 148
+204 95
+230 99
+245 99
+271 98
+209 106
+225 107
+249 108
+264 109
+238 129
+231 132
+244 133
+237 145
+236 153
+}
+Eakins_Elder_1883_003_stasm.bmp 1 face

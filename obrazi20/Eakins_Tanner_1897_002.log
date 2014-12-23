@@ -1,0 +1,29 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/obrazi20/Eakins_Tanner_1897_002.jpg: YAW00  yaw   0 rot  -8 
+00000000 Eakins_Tanner_1897_002
+{ 20 2
+162 576
+355 606
+148 839
+288 858
+87 520
+207 528
+301 540
+431 572
+43 553
+122 572
+192 587
+311 605
+385 613
+493 627
+219 730
+187 747
+254 756
+214 826
+208 878
+192 988
+}
+Eakins_Tanner_1897_002_stasm.bmp 1 face

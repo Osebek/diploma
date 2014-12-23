@@ -1,0 +1,26 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/obrazi17/Eakins_MacDowell_1880_001.jpg: YAW00  yaw   0 rot   0 
+00000000 Eakins_MacDowell_1880_001
+{ 17 2
+283 288
+359 287
+296 381
+354 381
+256 277
+306 270
+334 270
+387 275
+269 291
+297 289
+345 289
+374 290
+319 307
+309 323
+333 323
+323 358
+323 376
+}
+Eakins_MacDowell_1880_001_stasm.bmp 1 face

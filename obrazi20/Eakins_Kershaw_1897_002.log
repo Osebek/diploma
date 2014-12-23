@@ -1,0 +1,29 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/obrazi20/Eakins_Kershaw_1897_002.jpg: YAW00  yaw   0 rot  10 
+00000000 Eakins_Kershaw_1897_002
+{ 20 2
+502 193
+594 193
+510 307
+587 307
+464 170
+523 180
+561 181
+630 170
+452 194
+483 194
+518 196
+574 197
+612 194
+670 187
+536 256
+522 265
+557 264
+542 301
+544 320
+549 377
+}
+Eakins_Kershaw_1897_002_stasm.bmp 1 face

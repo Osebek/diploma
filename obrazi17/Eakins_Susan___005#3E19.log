@@ -1,0 +1,26 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/obrazi17/Eakins_Susan___005#3E19.JPG: YAW00  yaw   0 rot   0 
+00000000 Eakins_Susan___005#3E19
+{ 17 2
+701 653
+917 635
+732 932
+907 926
+612 632
+778 618
+853 607
+1004 597
+661 660
+747 655
+875 643
+960 638
+827 791
+786 816
+862 812
+825 910
+821 970
+}
+Eakins_Susan___005#3E19_stasm.bmp 1 face

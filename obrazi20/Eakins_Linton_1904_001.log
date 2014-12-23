@@ -1,0 +1,29 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/obrazi20/Eakins_Linton_1904_001.jpg: YAW00  yaw   0 rot   0 
+00000000 Eakins_Linton_1904_001
+{ 20 2
+511 411
+626 437
+508 523
+583 542
+478 382
+554 389
+603 402
+665 422
+443 400
+491 409
+533 420
+605 436
+646 444
+671 449
+567 488
+542 491
+581 500
+555 516
+545 555
+532 600
+}
+Eakins_Linton_1904_001_stasm.bmp 1 face
