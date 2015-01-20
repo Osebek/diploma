@@ -1,0 +1,29 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/jpegs/part2-page-008_suzanneJulius_c1.jpg: YAW00  yaw   0 rot -10 
+00000000 part2-page-008_suzanneJulius_c1
+{ 20 2
+416 358
+484 372
+403 434
+475 448
+395 339
+442 347
+469 354
+515 363
+372 353
+404 358
+430 362
+473 372
+500 377
+535 382
+449 391
+434 399
+459 404
+442 427
+437 455
+429 503
+}
+part2-page-008_suzanneJulius_c1_stasm.bmp 1 face

@@ -237,17 +237,16 @@ for znacilnice in faces:
 	#print float(math.degrees(znacilnice.getFaceRotation()))	
 	znacilnice.rotateFeatures(znacilnice.getFaceRotation())
 	znacilnice.moveFeatures(CENTERX-int(znacilnice.getLeftEyePupilLocation().getX()),CENTERY-int(znacilnice.getLeftEyePupilLocation().getY()))
-	#proportionVector.append(znacilnice.getFilename())
+	proportionVector.append(znacilnice.getFilename())
 	proportionVector.append(znacilnice.proportion_width_between_pupils_vs_temples_width())
 	proportionVector.append(znacilnice.proportion_width_between_innerEyebrows_vs_temples())
 	proportionVector.append(znacilnice.proportion_width_between_outerEyebrows_vs_temples())
 	proportionVector.append(znacilnice.proportion_width_between_pupils_vs_lips_width())
 	proportionVector.append(znacilnice.proportion_width_between_outerEyesCorners_vs_lips_width())
-	proportionVector.append(znacilnice.proportion_width_centerEyesToChin_vs_noseToChin())
+	#proportionVector.append(znacilnice.proportion_width_centerEyesToChin_vs_noseToChin())
 	proportionVector.append(znacilnice.proportion_width_between_temples_vs_centerBetweenEyes_to_chin())
 	proportionVector.append(znacilnice.proportion_width_betweenPupils_vs_distance_tipOfNose_to_chin())
 	#proportionVector = normalizeFloatArray(proportionVector)
-	proportionVector.insert(0,znacilnice.getFilename())
 	pictureProportionsArray.append(proportionVector)
 	znacilnica = znacilnice.getFeatures()
 	slika = np.zeros((2000,2000,3), np.uint8)
@@ -270,3 +269,5 @@ for znacilniceSlike in pictureProportionsArray:
 	s = str(znacilniceSlike) + "\n"
 	f.write(s)
 f.close()
+
+

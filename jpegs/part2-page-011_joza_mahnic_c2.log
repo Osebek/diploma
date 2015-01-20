@@ -1,0 +1,29 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/jpegs/part2-page-011_joza_mahnic_c2.jpg: YAW00  yaw   0 rot   0 
+00000000 part2-page-011_joza_mahnic_c2
+{ 20 2
+167 217
+249 215
+169 312
+234 313
+141 193
+181 195
+223 192
+271 189
+130 214
+152 217
+180 219
+232 218
+262 215
+307 215
+194 275
+181 281
+212 281
+196 306
+196 327
+195 379
+}
+part2-page-011_joza_mahnic_c2_stasm.bmp 1 face

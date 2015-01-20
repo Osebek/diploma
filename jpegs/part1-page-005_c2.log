@@ -1,0 +1,29 @@
+Stasm version 4.1.0  Logging to stasm.log
+Open ../data/haarcascade_frontalface_alt2.xml
+Open ../data/haarcascade_mcs_lefteye.xml
+Open ../data/haarcascade_mcs_righteye.xml
+Skripte/jpegs/part1-page-005_c2.jpg: YAW00  yaw   0 rot   6 
+00000000 part1-page-005_c2
+{ 20 2
+161 157
+219 151
+171 219
+217 214
+135 143
+173 143
+199 141
+237 132
+125 163
+147 160
+171 158
+206 154
+230 150
+252 147
+189 187
+182 194
+200 192
+192 208
+194 225
+200 260
+}
+part1-page-005_c2_stasm.bmp 1 face

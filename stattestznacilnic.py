@@ -26,15 +26,13 @@ def statTest(prveZnacilnice,drugeZnacilnice):
 
 			vsotaRazlik += razlika[-1]
 	# "razlike so kul, seprav X-Y je gud"
-	print "razlike" + str(razlika)
+	#print "razlike" + str(razlika)
 	# vsota razlik je tud kul
 	vsotaRazlik /= n		
 	for r in razlika:
-		print r 
 		vsotaKvadratovRazlik += math.pow(r - vsotaRazlik,2)
 
 	s = Decimal(math.sqrt(vsotaKvadratovRazlik / (n-1)))
-	avgX = Decimal(vsotaPrve / n)
 	Ttest = round((vsotaRazlik / s)*Decimal(round(math.sqrt(n),5)),5)
 	print Ttest
 
@@ -49,9 +47,9 @@ for line in open("znacilnice.txt"):
 for i in range(0,len(znacilnice)):
 	znacilnice[i] = znacilnice[i].split(',')
 
-print znacilnice[1]
-print znacilnice[2]
-statTest(znacilnice[0],znacilnice[])
+#print znacilnice[25]
+#print znacilnice[21]
 
+statTest(znacilnice[21],znacilnice[0])
 
 
