@@ -50,6 +50,6 @@ for i in range(0,len(znacilnice)):
 #print znacilnice[25]
 #print znacilnice[21]
 
-statTest(znacilnice[21],znacilnice[0])
+statTest(znacilnice[2],znacilnice[3])
 
 

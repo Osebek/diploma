@@ -1,5 +1,5 @@
 #!/bin/bash
-for path in jpegs/*;
+for path in obrazi20/*;
 do
 	filename=$(basename $path);
 	name=`echo $path | cut -f1 -d'.'`

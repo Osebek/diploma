@@ -184,6 +184,24 @@ class FacialFeatures:
 	def proportion_width_centerEyesToChin_vs_noseToChin(self):
 		return Point.distanceBetweenPoints(self.getCenterBetweenEyesLocation(),self.getTipOfChinLocation()) / Point.distanceBetweenPoints(self.getTipOfNoseLocation(),self.getTipOfChinLocation())
 
+	def proportion_width_nose_vs_width_between_pupils(self):
+		return Point.distanceBetweenPoints(self.getLeftNostrilLocation(),self.getRightNostrilLocation()) / Point.distanceBetweenPoints(self.getLeftEyePupilLocation(),self.getRightEyePupilLocation())	
+
+	def allRatios(self):
+		allPoints = self.getFeatures()
+		numOfPoints = len(allPoints)
+		ratios = []
+		for i in range (0,numOfPoints):
+			for j in range (0,numOfPoints):
+				firstLength = Point.distanceBetweenPoints(allPoints[i],allPoints[j])
+				for k in range(0,numOfPoints):
+					for l in range(0,numOfPoints):
+						secondLength = Point.distanceBetweenPoints(allPoints[k],allPoints[l])
+						if (firstLength != 0 and secondLength != 0):
+							ratio = firstLength / secondLength
+							ratios.append(ratio)
+
+		return ratios
 
 
 
@@ -237,15 +255,24 @@ for znacilnice in faces:
 	#print float(math.degrees(znacilnice.getFaceRotation()))	
 	znacilnice.rotateFeatures(znacilnice.getFaceRotation())
 	znacilnice.moveFeatures(CENTERX-int(znacilnice.getLeftEyePupilLocation().getX()),CENTERY-int(znacilnice.getLeftEyePupilLocation().getY()))
+
+	ratios = znacilnice.allRatios()
+	print len(ratios)
+
 	proportionVector.append(znacilnice.getFilename())
-	proportionVector.append(znacilnice.proportion_width_between_pupils_vs_temples_width())
-	proportionVector.append(znacilnice.proportion_width_between_innerEyebrows_vs_temples())
-	proportionVector.append(znacilnice.proportion_width_between_outerEyebrows_vs_temples())
-	proportionVector.append(znacilnice.proportion_width_between_pupils_vs_lips_width())
-	proportionVector.append(znacilnice.proportion_width_between_outerEyesCorners_vs_lips_width())
-	#proportionVector.append(znacilnice.proportion_width_centerEyesToChin_vs_noseToChin())
-	proportionVector.append(znacilnice.proportion_width_between_temples_vs_centerBetweenEyes_to_chin())
-	proportionVector.append(znacilnice.proportion_width_betweenPupils_vs_distance_tipOfNose_to_chin())
+
+	for ratio in ratios:
+		proportionVector.append(ratio)
+
+	#proportionVector.append(znacilnice.proportion_width_between_pupils_vs_temples_width())
+	#proportionVector.append(znacilnice.proportion_width_between_innerEyebrows_vs_temples())
+	#proportionVector.append(znacilnice.proportion_width_between_outerEyebrows_vs_temples())
+	#proportionVector.append(znacilnice.proportion_width_between_pupils_vs_lips_width())
+	#proportionVector.append(znacilnice.proportion_width_between_outerEyesCorners_vs_lips_width())
+	##proportionVector.append(znacilnice.proportion_width_nose_vs_width_between_pupils())
+	##proportionVector.append(znacilnice.proportion_width_centerEyesToChin_vs_noseToChin())
+	#proportionVector.append(znacilnice.proportion_width_between_temples_vs_centerBetweenEyes_to_chin())
+	#proportionVector.append(znacilnice.proportion_width_betweenPupils_vs_distance_tipOfNose_to_chin())
 	#proportionVector = normalizeFloatArray(proportionVector)
 	pictureProportionsArray.append(proportionVector)
 	znacilnica = znacilnice.getFeatures()
@@ -260,6 +287,7 @@ for znacilnice in faces:
 	#cv2.imshow('slika',slika)
 	#cv2.waitKey(0)
 	#cv2.destroyAllWindows()
+
 
 
 
